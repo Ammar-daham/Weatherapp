@@ -12,7 +12,7 @@ body{
 }
 input[type="text"]{
     height: 50px;
-    width: 600px;
+    width: 75vw;
     background: #e7e7e7;
     font-family: sans-serif;
     font-weight: bold;
@@ -23,7 +23,7 @@ input[type="text"]{
 }
 input[type="submit"]{
     height: 50px;
-    width: 100px;
+    width: 20vw;
     background: #e7e7e7;
     font-family: sans-serif;
     font-weight: bold;
