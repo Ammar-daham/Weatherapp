@@ -5,7 +5,7 @@ var desc = document.querySelector('.desc')
 var temp = document.querySelector('.temp')
 
 button.addEventListener('click', function (){
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+ inputValue.value +'&appid=81d5b84f46bdf2d1085cd23c534831d0')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ inputValue.value +'&appid=81d5b84f46bdf2d1085cd23c534831d0')
         .then(response => response.json())
         .then(data => {
             var nameValue = data['name'];
@@ -15,7 +15,5 @@ button.addEventListener('click', function (){
             name.innerHTML = nameValue;
             temp.innerHTML = tempValue;
             desc.innerHTML = descValue;
-        })
-        
-        .catch(err => alert("Wrong city name!"))
+        }).catch(err => alert("Wrong city name!"))
 })
